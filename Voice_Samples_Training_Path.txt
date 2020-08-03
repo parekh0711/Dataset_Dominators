@@ -54,11 +54,7 @@ Nandini-011/Nandini_2.wav
 Nandini-011/Nandini_3.wav
 Nandini-011/Nandini_4.wav
 Nandini-011/Nandini_5.wav
-Nimish-012/Nimish_1.wav
-Nimish-012/Nimish_2.wav
 Nimish-012/Nimish_3.wav
-Nimish-012/Nimish_4.wav
-Nimish-012/Nimish_5.wav
 Suman-013/Suman_1.wav
 Suman-013/Suman_2.wav
 Suman-013/Suman_3.wav
@@ -66,7 +62,7 @@ Suman-013/Suman_4.wav
 Suman-013/Suman_5.wav
 TraptiDa-014/TraptiDa_1.wav
 TraptiDa-014/TraptiDa_2.wav
-TraptiDa-014/TraptiDa_3.wav.
+TraptiDa-014/TraptiDa_3.wav
 TraptiDa-014/TraptiDa_4.wav
 TraptiDa-014/TraptiDa_5.wav
 Prabhakar-015/Prabhakar_1.wav
@@ -173,7 +169,7 @@ SunnyDeol-035/SunnyDeol_1.wav
 SunnyDeol-035/SunnyDeol_2.wav
 SunnyDeol-035/SunnyDeol_3.wav
 SunnyDeol-035/SunnyDeol_4.wav
-SunnyDeol-035/SunnyDeol_5.wav.
+SunnyDeol-035/SunnyDeol_5.wav
 ViratKohli-036/VirartKohli_1.wav
 ViratKohli-036/VirartKohli_2.wav
 ViratKohli-036/VirartKohli_3.wav
@@ -324,11 +320,11 @@ VijayKashyap-065/VijayKashyap_2.wav
 VijayKashyap-065/VijayKashyap_3.wav
 VijayKashyap-065/VijayKashyap_4.wav
 VijayKashyap-065/VijayKashyap_5.wav
-Vaishnavigupta-066/Vaishnavigupta_1.wav
-Vaishnavigupta-066/Vaishnavigupta_2.wav
-Vaishnavigupta-066/Vaishnavigupta_3.wav
-Vaishnavigupta-066/Vaishnavigupta_4.wav
-Vaishnavigupta-066/Vaishnavigupta_5.wav
+Vaishnavigupta-066/VaishanaviGupta_1.wav
+Vaishnavigupta-066/VaishanaviGupta_2.wav
+Vaishnavigupta-066/VaishanaviGupta_3.wav
+Vaishnavigupta-066/VaishanaviGupta_4.wav
+Vaishnavigupta-066/VaishanaviGupta_5.wav
 AshishPatel-067/AshishPatel_1.wav
 AshishPatel-067/AshishPatel_2.wav
 AshishPatel-067/AshishPatel_3.wav
@@ -353,7 +349,6 @@ GurnoorKaur-071/GurnoorKaur_1.wav
 GurnoorKaur-071/GurnoorKaur_2.wav
 GurnoorKaur-071/GurnoorKaur_3.wav
 GurnoorKaur-071/GurnoorKaur_4.wav
-GurnoorKaur-071/GurnoorKaur_5.wav
 JyotiRathore-072/JyotiRathore_1.wav
 JyotiRathore-072/JyotiRathore_2.wav
 JyotiRathore-072/JyotiRathore_3.wav

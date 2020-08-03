@@ -1,4 +1,3 @@
-path
 Aadiksha_6.wav
 AamirKhan_6.wav
 AartiDa_6.wav
