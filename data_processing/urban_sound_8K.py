@@ -39,13 +39,12 @@ class UrbanSound8K:
         return all_files
 
     def get_train_val_filenames(self):
-        # urbansound_metadata = self._get_urban_sound_8K_filenames()
+        urbansound_metadata = self._get_urban_sound_8K_filenames()
 
-        # folds from 0 to 9 are used for training
-        # urbansound_train = urbansound_metadata[urbansound_metadata.fold != 10]
+        # folds from 1 to 9 are used for training
+        urbansound_train = urbansound_metadata[urbansound_metadata.fold != 10]
 
-        # urbansound_train_filenames = self._get_filenames_by_class_id(urbansound_train)
-        urbansound_train_filenames =  [str(i)+".wav" for i in range(1,11)]
+        urbansound_train_filenames = self._get_filenames_by_class_id(urbansound_train)
         np.random.shuffle(urbansound_train_filenames)
 
         # separate noise files for train/validation

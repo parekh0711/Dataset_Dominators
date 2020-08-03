@@ -127,16 +127,16 @@ class Dataset:
     def create_tf_record(self, *, prefix, subset_size, parallel=False):
         counter = 0
         p = multiprocessing.Pool(multiprocessing.cpu_count())
-        print(self.clean_filenames)
-        for i in range(0, len(self.clean_filenames), subset_size):
 
-            tfrecord_filename = "Records/"+prefix + '_' + str(counter) + '.tfrecords'
+        for i in range(0, len(self.clean_filenames), subset_size):
+            print("clean", len(self.clean_filenames))
+            tfrecord_filename = 'Records/' + prefix + '_' + str(counter) + '.tfrecords'
 
             if os.path.isfile(tfrecord_filename):
                 print(f"Skipping {tfrecord_filename}")
                 counter += 1
                 continue
-            print(tfrecord_filename)
+
             writer = tf.io.TFRecordWriter(tfrecord_filename)
             clean_filenames_sublist = self.clean_filenames[i:i + subset_size]
 
@@ -144,7 +144,12 @@ class Dataset:
             if parallel:
                 out = p.map(self.parallel_audio_processing, clean_filenames_sublist)
             else:
-                out = [self.parallel_audio_processing(filename) for filename in clean_filenames_sublist]
+                for filename in clean_filenames_sublist:
+                    try:
+                        out = [self.parallel_audio_processing(filename)]
+                    except:
+                        print(filename)
+                        continue
 
             for o in out:
                 noise_stft_magnitude = o[0]
