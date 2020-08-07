@@ -5,7 +5,7 @@ import warnings
 
 warnings.filterwarnings(action='ignore')
 
-mozilla_basepath = 'Speech-Dataset-in-Hindi-Language/'
+mozilla_basepath = 'Hindi/'
 urbansound_basepath = 'Noise/'
 
 mcv = MozillaCommonVoiceDataset(mozilla_basepath, val_dataset_size=55)
