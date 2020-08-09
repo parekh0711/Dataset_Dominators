@@ -5,10 +5,10 @@ import warnings
 
 warnings.filterwarnings(action='ignore')
 
-mozilla_basepath = 'Hindi/'
+clean_basepath = 'Hindi/'
 urbansound_basepath = 'Noise/'
 
-mcv = MozillaCommonVoiceDataset(mozilla_basepath, val_dataset_size=55)
+mcv = MozillaCommonVoiceDataset(clean_basepath, val_dataset_size=55)
 clean_train_filenames, clean_val_filenames = mcv.get_train_val_filenames()
 
 us8K = UrbanSound8K(urbansound_basepath, val_dataset_size=200)
@@ -25,11 +25,3 @@ val_dataset.create_tf_record(prefix='val', subset_size=11)
 
 train_dataset = Dataset(clean_train_filenames, noise_train_filenames, **config)
 train_dataset.create_tf_record(prefix='train', subset_size=800)
-
-## Create Test Set
-'''clean_test_filenames = mcv.get_test_filenames()
-
-noise_test_filenames = us8K.get_test_filenames()
-
-test_dataset = Dataset(clean_test_filenames, noise_test_filenames, **config)
-test_dataset.create_tf_record(prefix='test', subset_size=1000, parallel=False)'''
